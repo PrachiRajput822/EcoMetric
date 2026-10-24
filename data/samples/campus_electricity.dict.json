@@ -1,0 +1,123 @@
+{
+  "id": "campus_electricity",
+  "title": "Campus electricity",
+  "title_hi": "कैंपस बिजली खपत",
+  "issue": "electricity",
+  "source": "synthetic",
+  "description": "Monthly electricity use per campus building, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "building"
+  ],
+  "primary_metric": "kwh",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "building": {
+      "role": "entity",
+      "label": "building",
+      "label_hi": "भवन"
+    },
+    "kwh": {
+      "role": "metric",
+      "label": "electricity use",
+      "label_hi": "बिजली खपत",
+      "unit": "kWh",
+      "additive": true,
+      "seasonal": true,
+      "keywords": [
+        "electricity",
+        "power",
+        "energy",
+        "kwh",
+        "consumption",
+        "बिजली",
+        "ऊर्जा"
+      ]
+    },
+    "occupancy": {
+      "role": "denominator",
+      "label": "occupancy",
+      "label_hi": "रहने वाले लोग",
+      "unit": "people",
+      "per_label": "occupant",
+      "per_label_hi": "व्यक्ति",
+      "additive": true,
+      "keywords": [
+        "occupant",
+        "occupancy",
+        "person",
+        "people",
+        "capita",
+        "student",
+        "व्यक्ति",
+        "प्रति व्यक्ति"
+      ]
+    },
+    "floor_area_sqft": {
+      "role": "denominator",
+      "label": "floor area",
+      "label_hi": "फ्लोर एरिया",
+      "unit": "sq ft",
+      "per_label": "sq ft",
+      "per_label_hi": "वर्ग फुट",
+      "additive": true,
+      "keywords": [
+        "area",
+        "sq ft",
+        "square foot",
+        "square feet",
+        "sqft",
+        "वर्ग फुट"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "entity_aliases": {
+    "Hostel A": [
+      "हॉस्टल ए",
+      "हॉस्टल a"
+    ],
+    "Hostel B": [
+      "हॉस्टल बी",
+      "हॉस्टल b"
+    ],
+    "Library": [
+      "लाइब्रेरी",
+      "पुस्तकालय"
+    ],
+    "Admin Block": [
+      "एडमिन ब्लॉक"
+    ],
+    "Academic Block": [
+      "एकेडमिक ब्लॉक"
+    ],
+    "Engineering Block": [
+      "इंजीनियरिंग ब्लॉक"
+    ]
+  },
+  "examples": {
+    "en": [
+      "Which building used the most electricity in September 2026?",
+      "How has Hostel B electricity changed since January?",
+      "Which building is most efficient per occupant?",
+      "What was the electricity cost last month?"
+    ],
+    "hi": [
+      "सितंबर 2026 में सबसे ज्यादा बिजली किस भवन ने इस्तेमाल की?",
+      "जनवरी से हॉस्टल बी की बिजली खपत कैसे बदली?",
+      "प्रति व्यक्ति सबसे कम बिजली किस भवन की है?",
+      "पिछले महीने बिजली का बिल कितना था?"
+    ]
+  }
+}

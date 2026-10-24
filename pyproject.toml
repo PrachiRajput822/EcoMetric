@@ -1,0 +1,10 @@
+[project]
+name = "ecometric"
+version = "1.0.0"
+description = "Ask questions about community and environmental data and get verified, code-calculated answers."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
+addopts = "-q"

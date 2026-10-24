@@ -1,0 +1,37 @@
+record_id,month,route,riders,trips,data_source
+M001,2026-01,Route 1 Campus to City,23073,627,synthetic
+M002,2026-01,Route 2 Campus to Railway Station,16496,471,synthetic
+M003,2026-01,Route 3 Hostel Shuttle,24043,916,synthetic
+M004,2026-01,Route 4 Campus to Bus Stand,12643,461,synthetic
+M005,2026-02,Route 1 Campus to City,19407,630,synthetic
+M006,2026-02,Route 2 Campus to Railway Station,16462,493,synthetic
+M007,2026-02,Route 3 Hostel Shuttle,26016,947,synthetic
+M008,2026-02,Route 4 Campus to Bus Stand,13026,456,synthetic
+M009,2026-03,Route 1 Campus to City,20459,635,synthetic
+M010,2026-03,Route 2 Campus to Railway Station,17797,488,synthetic
+M011,2026-03,Route 3 Hostel Shuttle,25116,893,synthetic
+M012,2026-03,Route 4 Campus to Bus Stand,13529,438,synthetic
+M013,2026-04,Route 1 Campus to City,21721,630,synthetic
+M014,2026-04,Route 2 Campus to Railway Station,16304,495,synthetic
+M015,2026-04,Route 3 Hostel Shuttle,25762,866,synthetic
+M016,2026-04,Route 4 Campus to Bus Stand,13683,452,synthetic
+M017,2026-05,Route 1 Campus to City,13564,427,synthetic
+M018,2026-05,Route 2 Campus to Railway Station,11872,323,synthetic
+M019,2026-05,Route 3 Hostel Shuttle,15698,600,synthetic
+M020,2026-05,Route 4 Campus to Bus Stand,8729,307,synthetic
+M021,2026-06,Route 1 Campus to City,6054,324,synthetic
+M022,2026-06,Route 2 Campus to Railway Station,4747,240,synthetic
+M023,2026-06,Route 3 Hostel Shuttle,7276,440,synthetic
+M024,2026-06,Route 4 Campus to Bus Stand,3697,224,synthetic
+M025,2026-07,Route 1 Campus to City,20109,602,synthetic
+M026,2026-07,Route 2 Campus to Railway Station,18026,477,synthetic
+M027,2026-07,Route 3 Hostel Shuttle,24264,880,synthetic
+M028,2026-07,Route 4 Campus to Bus Stand,12240,471,synthetic
+M029,2026-08,Route 1 Campus to City,18466,604,synthetic
+M030,2026-08,Route 2 Campus to Railway Station,15810,462,synthetic
+M031,2026-08,Route 3 Hostel Shuttle,22349,903,synthetic
+M032,2026-08,Route 4 Campus to Bus Stand,13202,431,synthetic
+M033,2026-09,Route 1 Campus to City,20853,593,synthetic
+M034,2026-09,Route 2 Campus to Railway Station,17628,460,synthetic
+M035,2026-09,Route 3 Hostel Shuttle,22640,867,synthetic
+M036,2026-09,Route 4 Campus to Bus Stand,11215,464,synthetic

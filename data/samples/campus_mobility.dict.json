@@ -1,0 +1,76 @@
+{
+  "id": "campus_mobility",
+  "title": "Campus bus ridership",
+  "title_hi": "कैंपस बस यात्री",
+  "issue": "mobility",
+  "source": "synthetic",
+  "description": "Monthly riders and trips per campus bus route, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "route"
+  ],
+  "primary_metric": "riders",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "route": {
+      "role": "entity",
+      "label": "route",
+      "label_hi": "रूट"
+    },
+    "riders": {
+      "role": "metric",
+      "label": "riders",
+      "label_hi": "यात्री",
+      "unit": "riders",
+      "additive": true,
+      "seasonal": true,
+      "keywords": [
+        "rider",
+        "riders",
+        "ridership",
+        "passenger",
+        "passengers",
+        "यात्री"
+      ]
+    },
+    "trips": {
+      "role": "denominator",
+      "label": "bus trips",
+      "label_hi": "बस फेरे",
+      "unit": "trips",
+      "per_label": "trip",
+      "per_label_hi": "फेरा",
+      "additive": true,
+      "keywords": [
+        "trip",
+        "trips",
+        "per trip",
+        "फेरा",
+        "फेरे"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "examples": {
+    "en": [
+      "Which route had the most riders in September 2026?",
+      "Which route carries the most riders per trip?",
+      "How has Route 3 Hostel Shuttle ridership changed since January?",
+      "What was the total ridership in 2026?"
+    ],
+    "hi": [
+      "सितंबर 2026 में सबसे ज्यादा यात्री किस रूट पर थे?"
+    ]
+  }
+}

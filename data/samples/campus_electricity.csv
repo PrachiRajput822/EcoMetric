@@ -1,0 +1,55 @@
+record_id,month,building,kwh,occupancy,floor_area_sqft,data_source
+E001,2026-01,Academic Block,34971,1870,120000,synthetic
+E002,2026-01,Engineering Block,44914,2127,150000,synthetic
+E003,2026-01,Hostel A,30027,598,80000,synthetic
+E004,2026-01,Hostel B,36945,755,95000,synthetic
+E005,2026-01,Library,13431,403,45000,synthetic
+E006,2026-01,Admin Block,9366,150,30000,synthetic
+E007,2026-02,Academic Block,34954,1829,120000,synthetic
+E008,2026-02,Engineering Block,44466,2135,150000,synthetic
+E009,2026-02,Hostel A,30665,614,80000,synthetic
+E010,2026-02,Hostel B,34574,762,95000,synthetic
+E011,2026-02,Library,15437,395,45000,synthetic
+E012,2026-02,Admin Block,9304,149,30000,synthetic
+E013,2026-03,Academic Block,34394,1887,120000,synthetic
+E014,2026-03,Engineering Block,47521,2221,150000,synthetic
+E015,2026-03,Hostel A,35014,596,80000,synthetic
+E016,2026-03,Hostel B,40659,760,95000,synthetic
+E017,2026-03,Library,16005,393,45000,synthetic
+E018,2026-03,Admin Block,11639,147,30000,synthetic
+E019,2026-04,Academic Block,46375,1854,120000,synthetic
+E020,2026-04,Engineering Block,58018,2197,150000,synthetic
+E021,2026-04,Hostel A,40704,609,80000,synthetic
+E022,2026-04,Hostel B,48207,743,95000,synthetic
+E023,2026-04,Library,17741,392,45000,synthetic
+E024,2026-04,Admin Block,12677,158,30000,synthetic
+E025,2026-05,Academic Block,53685,1755,120000,synthetic
+E026,2026-05,Engineering Block,67811,2195,150000,synthetic
+E027,2026-05,Hostel A,49353,602,80000,synthetic
+E028,2026-05,Hostel B,58357,758,95000,synthetic
+E029,2026-05,Library,21549,417,45000,synthetic
+E030,2026-05,Admin Block,14407,151,30000,synthetic
+E031,2026-06,Academic Block,52895,1092,120000,synthetic
+E032,2026-06,Engineering Block,68196,1301,150000,synthetic
+E033,2026-06,Hostel A,25398,207,80000,synthetic
+E034,2026-06,Hostel B,32754,263,95000,synthetic
+E035,2026-06,Library,,236,45000,synthetic
+E036,2026-06,Admin Block,15539,88,30000,synthetic
+E037,2026-07,Academic Block,47327,1761,120000,synthetic
+E038,2026-07,Engineering Block,60830,2146,150000,synthetic
+E039,2026-07,Hostel A,40317,634,80000,synthetic
+E040,2026-07,Hostel B,118500,747,95000,synthetic
+E041,2026-07,Library,20326,396,45000,synthetic
+E042,2026-07,Admin Block,14149,155,30000,synthetic
+E043,2026-08,Academic Block,43194,1760,120000,synthetic
+E044,2026-08,Engineering Block,55993,2235,150000,synthetic
+E045,2026-08,Hostel A,41601,591,80000,synthetic
+E046,2026-08,Hostel B,52254,763,95000,synthetic
+E047,2026-08,Library,19048,413,45000,synthetic
+E048,2026-08,Admin Block,13149,146,30000,synthetic
+E049,2026-09,Academic Block,42511,1770,120000,synthetic
+E050,2026-09,Engineering Block,49031,2263,150000,synthetic
+E051,2026-09,Hostel A,40276,601,80000,synthetic
+E052,2026-09,Hostel B,50313,775,95000,synthetic
+E053,2026-09,Library,18263,395,45000,synthetic
+E054,2026-09,Admin Block,12650,149,30000,synthetic

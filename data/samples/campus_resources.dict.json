@@ -1,0 +1,88 @@
+{
+  "id": "campus_resources",
+  "title": "Campus facility use",
+  "title_hi": "कैंपस सुविधा उपयोग",
+  "issue": "resources",
+  "source": "synthetic",
+  "description": "Monthly bookings and hours used per campus facility, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "facility"
+  ],
+  "primary_metric": "hours_used",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "facility": {
+      "role": "entity",
+      "label": "facility",
+      "label_hi": "सुविधा"
+    },
+    "bookings": {
+      "role": "metric",
+      "label": "bookings",
+      "label_hi": "बुकिंग",
+      "unit": "bookings",
+      "additive": true,
+      "keywords": [
+        "booking",
+        "bookings",
+        "बुकिंग"
+      ]
+    },
+    "hours_used": {
+      "role": "metric",
+      "label": "hours used",
+      "label_hi": "उपयोग के घंटे",
+      "unit": "hours",
+      "additive": true,
+      "keywords": [
+        "hours used",
+        "usage",
+        "used",
+        "utilisation",
+        "utilization",
+        "उपयोग"
+      ]
+    },
+    "hours_available": {
+      "role": "denominator",
+      "label": "hours available",
+      "label_hi": "उपलब्ध घंटे",
+      "unit": "hours",
+      "per_label": "available hour",
+      "per_label_hi": "उपलब्ध घंटा",
+      "additive": true,
+      "keywords": [
+        "available",
+        "capacity",
+        "utilisation",
+        "utilization",
+        "उपलब्ध",
+        "क्षमता"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "examples": {
+    "en": [
+      "Which facility had the most bookings in September 2026?",
+      "Which facility has the highest utilisation?",
+      "How have Computer Lab 1 hours used changed since January?",
+      "Compare Seminar Hall and Main Auditorium bookings in 2026"
+    ],
+    "hi": [
+      "सितंबर 2026 में सबसे ज्यादा बुकिंग किस सुविधा की हुई?"
+    ]
+  }
+}

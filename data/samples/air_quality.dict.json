@@ -1,0 +1,102 @@
+{
+  "id": "air_quality",
+  "title": "City air quality",
+  "title_hi": "शहर वायु गुणवत्ता",
+  "issue": "air",
+  "source": "synthetic",
+  "description": "Monthly average pollutant concentrations per monitoring station, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "station"
+  ],
+  "primary_metric": "pm25",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "station": {
+      "role": "entity",
+      "label": "station",
+      "label_hi": "स्टेशन"
+    },
+    "pm25": {
+      "role": "metric",
+      "label": "PM2.5",
+      "label_hi": "PM2.5",
+      "unit": "µg/m³",
+      "additive": false,
+      "seasonal": true,
+      "keywords": [
+        "pm2.5",
+        "pm 2.5",
+        "pm25",
+        "air",
+        "pollution",
+        "aqi",
+        "प्रदूषण",
+        "हवा"
+      ]
+    },
+    "pm10": {
+      "role": "metric",
+      "label": "PM10",
+      "label_hi": "PM10",
+      "unit": "µg/m³",
+      "additive": false,
+      "seasonal": true,
+      "keywords": [
+        "pm10",
+        "pm 10",
+        "dust",
+        "धूल"
+      ]
+    },
+    "no2": {
+      "role": "metric",
+      "label": "NO2",
+      "label_hi": "NO2",
+      "unit": "µg/m³",
+      "additive": false,
+      "keywords": [
+        "no2",
+        "nitrogen"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "entity_aliases": {
+    "Station Central": [
+      "सेंट्रल"
+    ],
+    "Station North": [
+      "नॉर्थ"
+    ],
+    "Station South": [
+      "साउथ"
+    ],
+    "Station East": [
+      "ईस्ट"
+    ]
+  },
+  "examples": {
+    "en": [
+      "Which station had the worst PM2.5 in January 2026?",
+      "How has PM2.5 at Station North changed since January?",
+      "What was the average PM10 across all stations in 2026?",
+      "Compare Station Central and Station East PM2.5 in September 2026"
+    ],
+    "hi": [
+      "जनवरी 2026 में सबसे ज्यादा PM2.5 किस स्टेशन पर था?",
+      "जनवरी से स्टेशन नॉर्थ पर PM2.5 कैसे बदला?"
+    ]
+  }
+}

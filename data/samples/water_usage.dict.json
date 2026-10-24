@@ -1,0 +1,90 @@
+{
+  "id": "water_usage",
+  "title": "Campus water usage",
+  "title_hi": "कैंपस पानी उपयोग",
+  "issue": "water",
+  "source": "synthetic",
+  "description": "Monthly water use per campus building, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "building"
+  ],
+  "primary_metric": "litres",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "building": {
+      "role": "entity",
+      "label": "building",
+      "label_hi": "भवन"
+    },
+    "litres": {
+      "role": "metric",
+      "label": "water use",
+      "label_hi": "पानी उपयोग",
+      "unit": "litres",
+      "additive": true,
+      "seasonal": true,
+      "keywords": [
+        "water",
+        "litre",
+        "liter",
+        "litres",
+        "पानी",
+        "जल"
+      ]
+    },
+    "occupancy": {
+      "role": "denominator",
+      "label": "occupancy",
+      "label_hi": "रहने वाले लोग",
+      "unit": "people",
+      "per_label": "occupant",
+      "per_label_hi": "व्यक्ति",
+      "additive": true,
+      "keywords": [
+        "occupant",
+        "occupancy",
+        "person",
+        "people",
+        "capita",
+        "व्यक्ति",
+        "प्रति व्यक्ति"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "entity_aliases": {
+    "Hostel A": [
+      "हॉस्टल ए"
+    ],
+    "Hostel B": [
+      "हॉस्टल बी"
+    ],
+    "Library": [
+      "लाइब्रेरी"
+    ]
+  },
+  "examples": {
+    "en": [
+      "Which building used the most water in August 2026?",
+      "How has Hostel A water use changed since January?",
+      "Which building uses the least water per occupant?",
+      "What was the total water use in 2026?"
+    ],
+    "hi": [
+      "अगस्त 2026 में सबसे ज्यादा पानी किस भवन ने इस्तेमाल किया?",
+      "प्रति व्यक्ति सबसे कम पानी किस भवन में है?"
+    ]
+  }
+}

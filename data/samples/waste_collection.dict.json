@@ -1,0 +1,103 @@
+{
+  "id": "waste_collection",
+  "title": "Ward waste collection",
+  "title_hi": "वार्ड कचरा संग्रह",
+  "issue": "waste",
+  "source": "synthetic",
+  "description": "Monthly waste collected and segregated per ward, January to September 2026.",
+  "time_column": "month",
+  "entity_columns": [
+    "ward"
+  ],
+  "primary_metric": "total_waste_kg",
+  "columns": {
+    "record_id": {
+      "role": "id",
+      "label": "record id"
+    },
+    "month": {
+      "role": "time",
+      "label": "month",
+      "label_hi": "महीना"
+    },
+    "ward": {
+      "role": "entity",
+      "label": "ward",
+      "label_hi": "वार्ड"
+    },
+    "total_waste_kg": {
+      "role": "metric",
+      "label": "waste collected",
+      "label_hi": "एकत्रित कचरा",
+      "unit": "kg",
+      "additive": true,
+      "per_label": "kg of waste",
+      "per_label_hi": "किलो कचरा",
+      "keywords": [
+        "waste",
+        "garbage",
+        "collected",
+        "कचरा",
+        "कूड़ा"
+      ]
+    },
+    "segregated_kg": {
+      "role": "metric",
+      "label": "segregated waste",
+      "label_hi": "अलग किया गया कचरा",
+      "unit": "kg",
+      "additive": true,
+      "keywords": [
+        "segregated",
+        "segregation",
+        "sorted",
+        "अलग"
+      ]
+    },
+    "households": {
+      "role": "denominator",
+      "label": "households",
+      "label_hi": "घर",
+      "unit": "households",
+      "per_label": "household",
+      "per_label_hi": "घर",
+      "additive": true,
+      "keywords": [
+        "household",
+        "households",
+        "home",
+        "घर",
+        "प्रति घर"
+      ]
+    },
+    "collection_trips": {
+      "role": "metric",
+      "label": "collection trips",
+      "label_hi": "संग्रह फेरे",
+      "unit": "trips",
+      "additive": true,
+      "keywords": [
+        "trip",
+        "trips",
+        "vehicle",
+        "फेरे"
+      ]
+    },
+    "data_source": {
+      "role": "source",
+      "label": "data source"
+    }
+  },
+  "examples": {
+    "en": [
+      "Which ward collected the most waste in September 2026?",
+      "Which ward has the highest segregation rate?",
+      "How has Ward 4 waste changed since January?",
+      "Which ward produces the least waste per household?"
+    ],
+    "hi": [
+      "सितंबर 2026 में सबसे ज्यादा कचरा किस वार्ड में एकत्र हुआ?",
+      "प्रति घर सबसे कम कचरा किस वार्ड में है?"
+    ]
+  }
+}

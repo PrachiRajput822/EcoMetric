@@ -1,0 +1,55 @@
+record_id,month,building,litres,occupancy,data_source
+W001,2026-01,Academic Block,920676,1845,synthetic
+W002,2026-01,Engineering Block,977751,2205,synthetic
+W003,2026-01,Hostel A,1582085,590,synthetic
+W004,2026-01,Hostel B,1645754,775,synthetic
+W005,2026-01,Library,191548,394,synthetic
+W006,2026-01,Admin Block,120557,151,synthetic
+W007,2026-02,Academic Block,923437,1742,synthetic
+W008,2026-02,Engineering Block,997852,2157,synthetic
+W009,2026-02,Hostel A,1576024,609,synthetic
+W010,2026-02,Hostel B,1743259,750,synthetic
+W011,2026-02,Library,190802,410,synthetic
+W012,2026-02,Admin Block,126562,154,synthetic
+W013,2026-03,Academic Block,916664,1786,synthetic
+W014,2026-03,Engineering Block,1047686,2277,synthetic
+W015,2026-03,Hostel A,1655629,630,synthetic
+W016,2026-03,Hostel B,1691213,770,synthetic
+W017,2026-03,Library,178065,402,synthetic
+W018,2026-03,Admin Block,128179,144,synthetic
+W019,2026-04,Academic Block,1039408,1822,synthetic
+W020,2026-04,Engineering Block,1182097,,synthetic
+W021,2026-04,Hostel A,1784313,595,synthetic
+W022,2026-04,Hostel B,2012061,731,synthetic
+W023,2026-04,Library,208159,379,synthetic
+W024,2026-04,Admin Block,148363,148,synthetic
+W025,2026-05,Academic Block,1039869,1740,synthetic
+W026,2026-05,Engineering Block,1210252,2241,synthetic
+W027,2026-05,Hostel A,1799052,615,synthetic
+W028,2026-05,Hostel B,2119066,761,synthetic
+W029,2026-05,Library,249814,398,synthetic
+W030,2026-05,Admin Block,148381,146,synthetic
+W031,2026-06,Academic Block,1132021,1779,synthetic
+W032,2026-06,Engineering Block,1312330,2121,synthetic
+W033,2026-06,Hostel A,914226,208,synthetic
+W034,2026-06,Hostel B,929252,266,synthetic
+W035,2026-06,Library,246611,394,synthetic
+W036,2026-06,Admin Block,157298,151,synthetic
+W037,2026-07,Academic Block,1106959,1751,synthetic
+W038,2026-07,Engineering Block,1215614,2154,synthetic
+W039,2026-07,Hostel A,1698274,588,synthetic
+W040,2026-07,Hostel B,2170912,770,synthetic
+W041,2026-07,Library,230388,398,synthetic
+W042,2026-07,Admin Block,153015,144,synthetic
+W043,2026-08,Academic Block,1081782,1842,synthetic
+W044,2026-08,Engineering Block,1282992,2262,synthetic
+W045,2026-08,Hostel A,1728237,626,synthetic
+W046,2026-08,Hostel B,1931598,758,synthetic
+W047,2026-08,Library,223545,409,synthetic
+W048,2026-08,Admin Block,136350,145,synthetic
+W049,2026-09,Academic Block,965213,1728,synthetic
+W050,2026-09,Engineering Block,1050160,2216,synthetic
+W051,2026-09,Hostel A,1616176,589,synthetic
+W052,2026-09,Hostel B,1902640,753,synthetic
+W053,2026-09,Library,213331,385,synthetic
+W054,2026-09,Admin Block,143656,152,synthetic

@@ -1,0 +1,46 @@
+record_id,month,facility,bookings,hours_used,hours_available,data_source
+R001,2026-01,Main Auditorium,33,110,300,synthetic
+R002,2026-01,Seminar Hall,59,209,300,synthetic
+R003,2026-01,Computer Lab 1,73,225,320,synthetic
+R004,2026-01,Computer Lab 2,60,175,320,synthetic
+R005,2026-01,Sports Complex,87,269,360,synthetic
+R006,2026-02,Main Auditorium,36,130,300,synthetic
+R007,2026-02,Seminar Hall,63,172,300,synthetic
+R008,2026-02,Computer Lab 1,77,241,320,synthetic
+R009,2026-02,Computer Lab 2,63,174,320,synthetic
+R010,2026-02,Sports Complex,82,253,360,synthetic
+R011,2026-03,Main Auditorium,35,127,300,synthetic
+R012,2026-03,Seminar Hall,60,190,300,synthetic
+R013,2026-03,Computer Lab 1,74,255,320,synthetic
+R014,2026-03,Computer Lab 2,65,176,320,synthetic
+R015,2026-03,Sports Complex,103,273,360,synthetic
+R016,2026-04,Main Auditorium,35,120,300,synthetic
+R017,2026-04,Seminar Hall,56,191,300,synthetic
+R018,2026-04,Computer Lab 1,78,237,320,synthetic
+R019,2026-04,Computer Lab 2,61,159,320,synthetic
+R020,2026-04,Sports Complex,92,258,360,synthetic
+R021,2026-05,Main Auditorium,35,109,300,synthetic
+R022,2026-05,Seminar Hall,57,180,300,synthetic
+R023,2026-05,Computer Lab 1,84,245,320,synthetic
+R024,2026-05,Computer Lab 2,65,160,320,synthetic
+R025,2026-05,Sports Complex,91,262,360,synthetic
+R026,2026-06,Main Auditorium,11,42,300,synthetic
+R027,2026-06,Seminar Hall,22,63,300,synthetic
+R028,2026-06,Computer Lab 1,28,82,320,synthetic
+R029,2026-06,Computer Lab 2,24,58,320,synthetic
+R030,2026-06,Sports Complex,34,81,360,synthetic
+R031,2026-07,Main Auditorium,33,108,300,synthetic
+R032,2026-07,Seminar Hall,55,197,300,synthetic
+R033,2026-07,Computer Lab 1,77,235,320,synthetic
+R034,2026-07,Computer Lab 2,58,156,320,synthetic
+R035,2026-07,Sports Complex,97,285,360,synthetic
+R036,2026-08,Main Auditorium,34,135,300,synthetic
+R037,2026-08,Seminar Hall,59,194,300,synthetic
+R038,2026-08,Computer Lab 1,81,246,320,synthetic
+R039,2026-08,Computer Lab 2,60,187,320,synthetic
+R040,2026-08,Sports Complex,113,255,360,synthetic
+R041,2026-09,Main Auditorium,36,122,300,synthetic
+R042,2026-09,Seminar Hall,60,185,300,synthetic
+R043,2026-09,Computer Lab 1,81,237,320,synthetic
+R044,2026-09,Computer Lab 2,68,176,320,synthetic
+R045,2026-09,Sports Complex,92,262,360,synthetic

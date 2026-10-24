@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoMetric</title>
+  <meta name="description" content="Ask questions about community and environmental data and get verified, code-calculated answers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='2' y='14' width='5' height='12' rx='1' fill='%230F6E63'/%3E%3Crect x='11.5' y='8' width='5' height='18' rx='1' fill='%230F6E63'/%3E%3Crect x='21' y='2' width='5' height='24' rx='1' fill='%2316211C'/%3E%3C/svg%3E">
+  <script src="vendor/plotly.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="14" width="5" height="12" rx="1" class="b1"/><rect x="11.5" y="8" width="5" height="18" rx="1" class="b1"/><rect x="21" y="2" width="5" height="24" rx="1" class="b2"/></svg>
+      <div>
+        <div class="brand-name">EcoMetric</div>
+        <div class="brand-sub" data-i18n="tagline">Community and environmental data intelligence</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="chip" id="modelChip" title="Which component turns questions into calculations">
+        <span class="dot" aria-hidden="true"></span><span id="modelChipText">Checking model</span>
+      </span>
+      <div class="seg" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="hi" aria-pressed="false" lang="hi">हिन्दी</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="steps" aria-label="Steps">
+    <ol id="stepList"></ol>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <!-- Step 1 -->
+    <section class="panel" data-step="1" aria-labelledby="s1h">
+      <div class="panel-head">
+        <h1 id="s1h" data-i18n="s1title">Load a dataset</h1>
+        <p class="lede" data-i18n="s1lede">Pick an issue to load its sample data, or upload your own CSV or Excel file.</p>
+      </div>
+      <div class="issue-grid" id="issueGrid" role="list"></div>
+      <div class="upload" id="dropZone">
+        <div>
+          <strong data-i18n="uploadTitle">Upload your own data</strong>
+          <p class="muted small" id="uploadHint">CSV or Excel, up to 5 MB. One row per reading, with a month or date column.</p>
+        </div>
+        <label class="btn secondary">
+          <input type="file" id="fileInput" accept=".csv,.xlsx" hidden>
+          <span data-i18n="chooseFile">Choose file</span>
+        </label>
+      </div>
+      <div id="datasetView" hidden></div>
+      <div class="panel-foot">
+        <span class="muted small" id="s1status" role="status" aria-live="polite"></span>
+        <button class="btn primary" id="toStep2" disabled data-i18n="continue">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="panel" data-step="2" aria-labelledby="s2h" hidden>
+      <div class="panel-head">
+        <h1 id="s2h" data-i18n="s2title">Ask in plain language</h1>
+        <p class="lede" data-i18n="s2lede">Ask in English or Hindi. The model only chooses the calculation; tested code does the maths.</p>
+      </div>
+      <div class="card">
+        <div class="row-between">
+          <div class="field-label" data-i18n="plannerLabel">Who reads the question</div>
+          <div class="seg" role="radiogroup" aria-label="Question reader" id="plannerSeg"></div>
+        </div>
+        <p class="muted small" id="plannerHint"></p>
+      </div>
+      <div class="card">
+        <label class="field-label" for="question" data-i18n="questionLabel">Your question</label>
+        <textarea id="question" rows="3" maxlength="500" placeholder="Which building used the most electricity in September 2026?"></textarea>
+        <div class="examples" id="examples" aria-label="Example questions"></div>
+      </div>
+      <div class="panel-foot">
+        <button class="btn ghost" data-goto="1" data-i18n="back">Back</button>
+        <span class="muted small" id="s2status" role="status" aria-live="polite"></span>
+        <button class="btn primary" id="askBtn" data-i18n="ask">Ask</button>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="panel" data-step="3" aria-labelledby="s3h" hidden>
+      <div class="panel-head">
+        <h1 id="s3h" data-i18n="s3title">Calculate with code</h1>
+        <p class="lede" data-i18n="s3lede">The question became one structured tool call. DuckDB ran it, and pandas checked it independently.</p>
+      </div>
+      <div id="calcView"></div>
+      <div class="panel-foot">
+        <button class="btn ghost" data-goto="2" data-i18n="back">Back</button>
+        <span></span>
+        <button class="btn primary" data-next="4" data-i18n="continue">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section class="panel" data-step="4" aria-labelledby="s4h" hidden>
+      <div class="panel-head">
+        <h1 id="s4h" data-i18n="s4title">Chart and answer</h1>
+      </div>
+      <div id="answerView"></div>
+      <div class="panel-foot">
+        <button class="btn ghost" data-goto="3" data-i18n="back">Back</button>
+        <span></span>
+        <button class="btn primary" data-next="5" data-i18n="continue">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 5 -->
+    <section class="panel" data-step="5" aria-labelledby="s5h" hidden>
+      <div class="panel-head">
+        <h1 id="s5h" data-i18n="s5title">Explain caveats</h1>
+        <p class="lede" data-i18n="s5lede">Every caveat comes from a rule-based check on the data, never from the model.</p>
+      </div>
+      <div id="caveatView"></div>
+      <details class="card" id="auditBox">
+        <summary data-i18n="auditTitle">Answer audit log</summary>
+        <div id="auditView" class="small"></div>
+      </details>
+      <div class="panel-foot">
+        <button class="btn ghost" data-goto="4" data-i18n="back">Back</button>
+        <button class="btn secondary" id="changeData" data-i18n="changeData">Change dataset</button>
+        <button class="btn primary" id="askAnother" data-i18n="askAnother">Ask another question</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot small muted">
+    <span>EcoMetric · Team NeuroNex · Hacktoberfest Hackday 2026, PS 03</span>
+    <span id="versionText"></span>
+  </footer>
+</body>
+</html>
